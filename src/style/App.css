@@ -1,42 +1,157 @@
-#root {
-  max-width: 1280px;
+html,
+body {
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #FFF2B4;
+  font-family: 'assistant';
+  color: #073799;
+  direction: rtl;
+  display: flex;
+  justify-content: center;
   text-align: center;
+  overflow: hidden;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.app {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  direction: rtl;
+  width: 100%;
+  height: 100%;
+  background-color: #FFF2B4;
+  font-family: 'assistant';
+  color: #073799;
+  overflow: hidden;
+  position: relative;
+}
+.bahad6 {
+  height: 5rem;
 }
 
-.card {
-  padding: 2em;
+.til {
+  height: 5rem;
 }
 
-.read-the-docs {
-  color: #888;
+.symbols {
+  position: absolute;
+  z-index: 4;
+  top: 0.5rem;
+  left: 0.5rem;
 }
+
+.about-btn {
+  border: none;
+  color: #FEECD8;
+  font-size: 2rem;
+  background-color: #073799;
+  border-radius: 150px;
+  width: 3.5rem;
+  height: 3.5rem;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  transition: transform 0.25s ease;
+  cursor: pointer;
+  padding: 0;
+}
+
+.aboutBtnContainer {
+  position: absolute;
+  left: 10rem;
+  top: 0.5rem;
+  text-align: center;
+  font-family: "assistant-bold";
+  color: #073799;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+.about-btn:hover {
+  transform: scale(1.15);
+}
+
+.div-about {
+  position: absolute;
+  color: #FFF2B4;
+  width: 15rem;
+  height: 27rem;
+  left: 4rem;
+  top: 6rem;
+  font-family: "assistant";
+  background: #073799;
+  border-radius: 1rem;
+  box-shadow: 0 15px 20px -20px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  transition: opacity 0.4s ease;
+  z-index: 2;
+}
+
+.list-text-about {
+  transition: background-color 0.5s ease;
+  margin: 5%;
+}
+
+.list-text-about:hover {
+  background-color: #dbdbdb;
+}
+
+.fade-in {
+  opacity: 1;
+  pointer-events: auto;
+  max-height: 500px;
+}
+
+.fade-out {
+  opacity: 0;
+  pointer-events: none;
+  max-height: 0;
+}
+
+
+@font-face {
+  font-family: rubik;
+  src: url('/src/assets/fonts/Rubik/Rubik-Bold.ttf');
+}
+
+@font-face {
+  font-family: rubik-black;
+  src: url('/src/assets/fonts/Rubik/Rubik-Black.ttf');
+}
+
+@font-face {
+  font-family: assistant;
+  src: url('/src/assets/fonts/Assistant/Assistant-Regular.ttf');
+}
+
+@font-face {
+  font-family: assistant-bold;
+  src: url('/src/assets/fonts/Assistant/Assistant-Bold.ttf');
+}
+
+@font-face {
+  font-family: assistant-semiBold;
+  src: url('/src/assets/fonts/Assistant/Assistant-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: assistant-extraBold;
+  src: url('/src/assets/fonts/Assistant/Assistant-ExtraBold.ttf');
+}
+
