@@ -140,8 +140,9 @@ body {
   font-family: "rubik-black";
   color: #E69907;
   position: absolute;
-  top: 10rem;
+  top: 8rem;
   font-size: 3rem;
+  z-index: 4;
 }
 
 @media (max-width: 1250px) {
@@ -152,6 +153,13 @@ body {
     right:2rem;
     z-index: 4;
   }
+  
+}
+@media (max-height: 1050px) {
+  .title {
+    top: 5rem;
+
+  }  
   
 }
 

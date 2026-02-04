@@ -38,12 +38,12 @@ function App() {
             <h3 className="list-text-about">רמ"ד טי"ל:</h3>
             <p className="list-text-about">רס"מ עדן בן חמו</p>
             <h3 className="list-text-about">גרסה:</h3>
-            <p className="list-text-about">דצמבר 2025</p>
+            <p className="list-text-about">פברואר 2026</p>
           </>
         )}
       </div>
       <img src={batashSymbol} alt="batashSymbol" className='batashSymbol' />
-      <p className='title'>בחר רכב:</p>
+      <p className='title'>בחר לומדה:</p>
       <ImageCarousel/>
     </>
   )
