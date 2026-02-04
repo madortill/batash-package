@@ -2,6 +2,8 @@ import { useState } from 'react'
 import './style/App.css'
 import til from "./assets/images/til.svg";
 import bahad6 from "./assets/images/bahad6.png";
+import batashSymbol from "./assets/images/batash-symbol-he.png";
+import ImageCarousel from './components/ImageCarousel';
 
 function App() {
   const [showAbout, setShowAbout] = useState(false);
@@ -40,6 +42,9 @@ function App() {
           </>
         )}
       </div>
+      <img src={batashSymbol} alt="batashSymbol" className='batashSymbol' />
+      <p className='title'>בחר רכב:</p>
+      <ImageCarousel/>
     </>
   )
 }

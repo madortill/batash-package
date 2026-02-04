@@ -87,6 +87,10 @@ body {
   transform: scale(1.15);
 }
 
+.about-btn:focus {
+  outline: none;
+}
+
 .div-about {
   position: absolute;
   color: #FFF2B4;
@@ -122,6 +126,33 @@ body {
   opacity: 0;
   pointer-events: none;
   max-height: 0;
+}
+
+.batashSymbol {
+  width: 17rem;
+  position: absolute;
+  top: 2rem;
+  right:4rem;
+  z-index: 4;
+}
+
+.title {
+  font-family: "rubik-black";
+  color: #E69907;
+  position: absolute;
+  top: 10rem;
+  font-size: 3rem;
+}
+
+@media (max-width: 1250px) {
+  .batashSymbol {
+    width: 13rem;
+    position: absolute;
+    top: 1rem;
+    right:2rem;
+    z-index: 4;
+  }
+  
 }
 
 
