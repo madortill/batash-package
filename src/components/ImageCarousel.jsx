@@ -10,9 +10,9 @@ function ImageCarousel() {
   const items = [
     { img: tigris, link: "/content/know-car", disabled: true },
     { img: sufa, link: "/content/defender", disabled: true },
-    { img: safety, link: "/content/highlix" },
+    { img: safety, link: "https://madortill.github.io/batash-safety/" },
     { img: david, link: "https://madortill.github.io/batash-david/" },
-    { img: savana, link: "/content/safety", disabled: true },
+    { img: savana, link: "/content/defender", disabled: true },
   ];
   const [active, setActive] = useState(2); // האמצעי
 
