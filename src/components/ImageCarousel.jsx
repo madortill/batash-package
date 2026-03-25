@@ -9,7 +9,7 @@ import savana from "../assets/images/savana.png";
 function ImageCarousel() {
   const items = [
     { img: tigris, link: "/content/know-car", disabled: true },
-    { img: sufa, link: "/content/defender", disabled: true },
+    { img: sufa, link: "https://madortill.github.io/batash-sufa/" },
     { img: safety, link: "https://madortill.github.io/batash-safety/" },
     { img: david, link: "https://madortill.github.io/batash-david/" },
     { img: savana, link: "/content/defender", disabled: true },
