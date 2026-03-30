@@ -4,6 +4,7 @@ import til from "./assets/images/til.svg";
 import bahad6 from "./assets/images/bahad6.png";
 import batashSymbol from "./assets/images/batash-symbol-he.png";
 import ImageCarousel from './components/ImageCarousel';
+import MobileWarningOverlay from './components/MobileWarningOverlay';
 
 function App() {
   const [showAbout, setShowAbout] = useState(false);
@@ -15,6 +16,7 @@ function App() {
 
   return (
     <>
+         <MobileWarningOverlay />
     <div className="symbols">
         <img src={bahad6} alt="bahad6" className="bahad6" />
         <img src={til} alt="til" className="til" />
