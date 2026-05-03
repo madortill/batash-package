@@ -1,10 +1,10 @@
-import { useState } from 'react'
-import './style/App.css'
+import { useState } from "react";
+import "./style/App.css";
 import til from "./assets/images/til.svg";
 import bahad6 from "./assets/images/bahad6.png";
 import batashSymbol from "./assets/images/batash-symbol-he.png";
-import ImageCarousel from './components/ImageCarousel';
-import MobileWarningOverlay from './components/MobileWarningOverlay';
+import ImageCarousel from "./components/ImageCarousel";
+import MobileWarningOverlay from "./components/MobileWarningOverlay";
 
 function App() {
   const [showAbout, setShowAbout] = useState(false);
@@ -16,15 +16,13 @@ function App() {
 
   return (
     <>
-         <MobileWarningOverlay />
-    <div className="symbols">
+      <MobileWarningOverlay />
+      <div className="symbols">
         <img src={bahad6} alt="bahad6" className="bahad6" />
         <img src={til} alt="til" className="til" />
       </div>
-       <div onClick={toggleAbout} className="aboutBtnContainer">
-        <button className="about-btn">
-          {infoSymbol}
-        </button>
+      <div onClick={toggleAbout} className="aboutBtnContainer">
+        <button className="about-btn">{infoSymbol}</button>
         <p>אודות</p>
       </div>
       <div className={`div-about ${showAbout ? "fade-in" : "fade-out"}`}>
@@ -44,11 +42,11 @@ function App() {
           </>
         )}
       </div>
-      <img src={batashSymbol} alt="batashSymbol" className='batashSymbol' />
-      <p className='title'>בחר לומדה:</p>
-      <ImageCarousel/>
+      <img src={batashSymbol} alt="batashSymbol" className="batashSymbol" />
+      <p className="title">בחר לומדה:</p>
+      <ImageCarousel />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
